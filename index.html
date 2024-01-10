@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <script src="index.js" defer></script>
     <title>Money Heist</title>
 </head>
 <body>
@@ -34,7 +33,7 @@
             <div class="btns">
                 <button>Play</button>
                 <button>More Info</button>
-                <button>Watch Trailer</button>
+                <button id="watchTrailerBtn">Watch Trailer</button>
             </div>
            
 
@@ -44,9 +43,17 @@
         <div class="right-side">
             <img src="mh.webp" alt="" width="200px">
         </div>
+
+        <div id="videoPopup" class="popup">
+            <div class="popup-content">
+                <span id="closeBtn" class="close">&times;</span>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_InqQJRqGW4?si=MsianV98I3ykS9-v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            </div>
+        </div>
       
 
     </section>
+
+    <script src="index.js" defer></script>
     
 </body>
 </html>

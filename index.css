@@ -71,7 +71,6 @@ header > nav > ul > li:hover{
 
 section{
     height: calc(100vh - 70px);
-    border: 1px solid red;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -98,7 +97,6 @@ section > .left-side > p{
 }
 .btns{
     margin-top: 20px;
-    border: 1px solid rgb(223, 207, 207);
     width: 100%;
 }
 button{
@@ -122,6 +120,55 @@ button:nth-of-type(3) {
     background-color: gray;
 }
 
-section > .right-side{
-
+section > .right-side > img{
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 5px;
+  padding: 0 10px;
+  width: 90%;
+  opacity:0.8;
 }
+
+section > .right-side > img:hover {
+    box-shadow: 0 0 15px 5px rgba(231, 76, 60, 0.6), /* Red shadow */
+                0 0 25px 10px rgba(255, 255, 255, 0.5); /* White shadow */
+}
+
+
+/* Existing styles ... */
+
+/* Popup container - hidden by default */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+/* Popup content */
+.popup-content {
+    margin: 15% auto;
+    padding: 20px;
+    width: 60%;
+    background-color: rgb(46, 44, 44);
+    border-radius: 5px;
+}
+
+/* Close button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
