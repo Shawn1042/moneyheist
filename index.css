@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: red;
+}
+
+body {
+    position: relative;
+    background-image: url('money-heist.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensures that body covers the full viewport height */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Black overlay with 50% opacity */
+    z-index: 1;
+}
+
+/* Ensures that content on the body is displayed above the overlay */
+body * {
+    position: relative;
+    z-index: 2;
+}
+
+
+h2{ 
+    font-size: 2rem;
+    text-transform: uppercase;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+}
+
+header > nav > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+header > nav > ul > li{
+    transition: 0.7s;
+}
+
+header > nav > ul > li:hover{
+    cursor: pointer;
+    color: white;
+}
+
+/* section */
+
+section{
+    height: calc(100vh - 70px);
+    border: 1px solid red;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+section > .left-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    padding: 0 40px;
+}
+
+section > .left-side > h1{
+    white-space: nowrap;
+    font-size: 6rem;
+}
+
+section > .left-side > p{
+    line-height: 30px;
+    font-size: 1.5rem;
+}
+.btns{
+    margin-top: 20px;
+    border: 1px solid rgb(223, 207, 207);
+    width: 100%;
+}
+button{
+    cursor: pointer;
+    margin: 10px;
+    padding: 9px 25px;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+button:nth-of-type(1){
+    background-color: red;
+}
+
+button:nth-of-type(2) {
+    background-color: blue;
+}
+
+button:nth-of-type(3) {
+    background-color: gray;
+}
+
+section > .right-side{
+
+}
