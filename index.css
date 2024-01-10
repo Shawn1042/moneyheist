@@ -17,7 +17,7 @@ body {
     background-size: cover;
     margin: 0;
     padding: 0;
-    height: 100vh; /* Ensures that body covers the full viewport height */
+    height: 100vh; 
 }
 
 body::before {
@@ -27,11 +27,10 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.7); /* Black overlay with 50% opacity */
+    background: rgba(0, 0, 0, 0.7); 
     z-index: 1;
 }
 
-/* Ensures that content on the body is displayed above the overlay */
 body * {
     position: relative;
     z-index: 2;
@@ -41,8 +40,9 @@ body * {
 h2{ 
     font-size: 2rem;
     text-transform: uppercase;
-
 }
+
+/* header */
 
 header{
     display: flex;
@@ -76,6 +76,8 @@ section{
     align-items: center;
 }
 
+/* left side section */
+
 section > .left-side{
     display: flex;
     justify-content: center;
@@ -95,6 +97,8 @@ section > .left-side > p{
     line-height: 30px;
     font-size: 1.5rem;
 }
+
+/* BUTTONS */
 .btns{
     margin-top: 20px;
     width: 100%;
@@ -108,6 +112,7 @@ button{
     outline: none;
 }
 
+
 button:nth-of-type(1){
     background-color: red;
 }
@@ -119,6 +124,8 @@ button:nth-of-type(2) {
 button:nth-of-type(3) {
     background-color: gray;
 }
+
+/* right side section */
 
 section > .right-side > img{
     transition: box-shadow 0.3s ease-in-out;
@@ -134,9 +141,8 @@ section > .right-side > img:hover {
 }
 
 
-/* Existing styles ... */
 
-/* Popup container - hidden by default */
+/* POPUP VIDEO TRAILER */
 .popup {
     display: none;
     position: fixed;
