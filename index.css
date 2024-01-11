@@ -86,15 +86,16 @@ section > .left-side{
     flex-direction: column;
     width: 40%;
     height: 100%;
-    padding: 0 40px;
+    padding-left: 50px;
 }
 
 section > .left-side > h1{
     white-space: nowrap;
-    font-size: 6rem;
+    font-size: 5.5rem;
 }
 
 section > .left-side > p{
+    margin-left: 20px;
     line-height: 30px;
     font-size: 1.5rem;
 }
@@ -113,7 +114,7 @@ button{
     color: white;
     border: none;
     outline: none;
-    transition: 0.5s;
+    transition: 0.25s;
 }
 
 
@@ -139,11 +140,16 @@ button:nth-of-type(2):hover{
 
 /* right side section */
 
+section > .right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 section > .right-side > img{
     transition: box-shadow 0.3s ease-in-out;
     border-radius: 5px;
   
-  width: 90%;
+  width: 75%;
   opacity:0.8;
 }
 
@@ -212,6 +218,7 @@ section > .left-side{
     section > .left-side > h1{
         font-size: 3em;
     }
+   
    
 
     section > .right-side{
